@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #eafaf3;
+    --secondary-color: #fafbfb;
+    --secon-color: #f4f6ff;
+    --black: #202223;
+    --white: #fff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
