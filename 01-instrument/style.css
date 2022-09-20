@@ -1,0 +1,207 @@
+:root {
+    --primary-color: #4C5FD5;
+    --secondary-color: #dadbf1;
+    --black: #0000;
+    --white: #fff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: var(--white);
+    display: flex;
+}
+
+.logowrapper *,
+.help-center p {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.logowrapper h2 {
+    font-weight: 700;
+}
+
+.help-center p {
+    padding-left: 0.3rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.vl {
+    border-left: 3px solid white;
+    height: 35px;
+}
+
+header ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+header button {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0.7rem 2rem;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    border-width: 1px;
+}
+
+.submit {
+    background-color: var(--black);
+    color: var(--white);
+    border-color: #dadbf1;
+}
+
+.signin {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-style: none;
+}
+
+
+@media (min-width: 600px) {}
+
+.hero-search {
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+}
+
+.hero-search * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-search {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+
+/* usin form and two inputs i.e. input for getting teh query and another type to submit shoulve used */
+
+.hero-search input {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 720px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    border-color: #000 !important;
+    border-radius: 4px !important;
+    border: 1px solid #dee2e6;
+    background-clip: padding-box;
+    padding: 1rem 1rem;
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* article section */
+.article-flex {
+    padding: 7% 10%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
+
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+
+article img {
+    max-width: 100%;
+    max-height: 80px;
+    height: auto;
+}
+
+article h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+article p {
+    font-size: 24px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+
+/* footer section */
+
+footer {
+    padding: 10px 30px;
+    background-color: black;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(5, minmax(10px, 1fr));
+}
+
+.footer-section h1{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section a{
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 800px) {
+    header {
+        padding: 0 5rem;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 40%;
+
+    }
+
+    header * {
+        display: flex;
+        margin-left: 0.5rem;
+        align-items: center;
+    }
+
+    .hero-search h1 {
+        font-weight: 400;
+        font-size: 80px;
+        padding-bottom: 10px;
+    }
+
+}
