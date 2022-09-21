@@ -4,6 +4,8 @@
     --secon-color: #f4f6ff;
     --black: #202223;
     --white: #fff;
+    --basic: #777879;
+
 }
 
 html {
@@ -18,9 +20,67 @@ html {
 
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     padding: 0;
     margin: 0;
     text-rendering: optimizeLegibility;
 }
+
+body h1{
+    font-weight: 800;
+}
+
+body h2{
+    font-weight: 600;
+}
+
+body p{
+    font-weight: 400;
+}
+
+header ul{
+    list-style: none;
+   
+}
+
+header li *{
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--basic);
+}
+
+header button{
+    border-radius: 5px;
+    box-shadow: #202223;
+    width: auto;
+}
+
+.btn-wrap{
+    float: inline-end;
+    width: 10px;
+    border: 1px solid var(--basic);
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+
+header{
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;   
+    gap: 2%;
+}
+
+header ul{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    align-content: flex-start;
+    gap: 4%;
+}
+
+.filler {
+    width: 46rem;
+}
+
